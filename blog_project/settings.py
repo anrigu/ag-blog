@@ -33,7 +33,7 @@ BLOG_WEB_HOST = config('WEB_HOST', default='http://localhost:3000')
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
-ALLOWED_HOSTS = [BLOG_HOST]
+ALLOWED_HOSTS = [BLOG_HOST, 'blog-ag.herokuapp.com']
 
 # CORS_ORIGIN_WHITELIST = (
 #     BLOG_WEB_HOST,
@@ -143,7 +143,7 @@ REST_AUTH_REGISTER_SERIALIZERS = {
     'REGISTER_SERIALIZER': 'posts.serializers.CreateRegistration',
 }
 
-ACCOUNT_ADAPTER='posts.auth.CustomAdapter'
+ACCOUNT_ADAPTER = 'posts.auth.CustomAdapter'
 AUTH_USER_MODEL = 'posts.Profile'
 
 # Internationalization
