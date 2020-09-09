@@ -30,7 +30,9 @@ function Page(props) {
     console.log(location);
     let currentSection = props.sections.filter(
       (section) =>
-        console.log(section.url === location) || section.url === location
+        console.log(section.url === location) ||
+        section.url === location ||
+        `${section.url}/` === location
     );
     if (!currentSection) {
       return "All";
@@ -58,8 +60,7 @@ function Page(props) {
     <Container maxWidth="lg" className={classes.layout}>
       <Header title="Blog" sections={props.sections} />
       {props.blogPosts ? (
-        props.blogPosts.map((post,ind) => {
-          
+        props.blogPosts.map((post, ind) => {
           return (
             <Grid
               container

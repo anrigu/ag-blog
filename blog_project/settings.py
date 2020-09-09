@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'gjd0@)nc)elv4(7lsr_3g*g!pikj1^@f_zlh0_b9jy)5ay!=uw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 BLOG_HOST = config('HOST', default='localhost')
 BLOG_APP_HOST = config('APP_HOST', default='http://localhost:8000')
