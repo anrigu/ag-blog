@@ -25,6 +25,7 @@ import asyncStatus from "../redux/asyncStatus";
 import AsyncSpinner from "../util/AsyncSpinner";
 import HelpIcon from "@material-ui/icons/Help";
 import Header from "../newComponents/Header";
+import DisplayHTML from './DisplayHTML';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -281,7 +282,7 @@ function PostArticle(props) {
 
       <div className={classes.preview}>
         <Typography variant="h2">{title}</Typography>
-        <Typography>{body}</Typography>
+        <DisplayHTML content = {body}/>
       </div>
     </Container>
   );

@@ -9,6 +9,7 @@ import moment from "moment";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import { useLocation } from "react-router-dom";
 import Header from "../newComponents/Header";
+import DisplayHTML from "./DisplayHTML";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -73,9 +74,9 @@ function ContentPage(props) {
                 <Typography variant="h2">{props.currentPost.title}</Typography>
               </Grid>
               <Grid container item>
-                <Typography variant="body1">
-                  {props.currentPost.body}
-                </Typography>
+                <div>
+                  <DisplayHTML content={props.currentPost.body} />
+                </div>
               </Grid>
             </div>
           ) : (
