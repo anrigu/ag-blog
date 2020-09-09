@@ -4,7 +4,7 @@ export default function DisplayHTML(props) {
   let splitContent = props.content.split("\n");
 
   return splitContent.map((line) => (
-    <div>
+    <div style={{wordBreak: "break-all"}}>
       {line}
       <br />
     </div>

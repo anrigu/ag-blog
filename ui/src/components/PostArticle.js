@@ -25,7 +25,7 @@ import asyncStatus from "../redux/asyncStatus";
 import AsyncSpinner from "../util/AsyncSpinner";
 import HelpIcon from "@material-ui/icons/Help";
 import Header from "../newComponents/Header";
-import DisplayHTML from './DisplayHTML';
+import DisplayHTML from "./DisplayHTML";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -50,6 +50,7 @@ const useStyles = makeStyles((theme) => ({
   preview: {
     display: "flex",
     flexDirection: "column",
+    flexWrap: "wrap",
   },
   title: {
     fontSize: 33,
@@ -107,7 +108,11 @@ function PostArticle(props) {
     let intendedAudience = props.sections.slice();
     return intendedAudience.filter(
       (section) =>
-        !(section.title === "Post An Article" || section.title === "About" || section.title === "Home")
+        !(
+          section.title === "Post An Article" ||
+          section.title === "About" ||
+          section.title === "Home"
+        )
     );
   };
 
@@ -134,7 +139,11 @@ function PostArticle(props) {
       >
         <div className={classes.write}>
           <div className={classes.root}>
-            <Typography align='center' variant='h2' style={{fontSize:22, color:'red', marginBottom:'10px'}}>
+            <Typography
+              align="center"
+              variant="h2"
+              style={{ fontSize: 22, color: "red", marginBottom: "10px" }}
+            >
               Reminder: You must have an account if you would like to post an
               article!
             </Typography>
@@ -272,7 +281,7 @@ function PostArticle(props) {
           <CssButton
             variant="outlined"
             type="submit"
-            disabled = {props.loginStatus !== 1}
+            disabled={props.loginStatus !== 1}
             className={classes.submitButton}
           >
             Submit
@@ -281,8 +290,11 @@ function PostArticle(props) {
       </form>
 
       <div className={classes.preview}>
+        <Typography variant="h1" style={{ fontSize: 25, marginTop: "10px" }}>
+          Wonder what your article might look like? Preview it below!
+        </Typography>
         <Typography variant="h2">{title}</Typography>
-        <DisplayHTML content = {body}/>
+        <DisplayHTML content={body} />
       </div>
     </Container>
   );

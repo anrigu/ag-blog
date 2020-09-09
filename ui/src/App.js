@@ -12,6 +12,7 @@ import Registration from "./components/registration/Registration";
 import { makeStyles } from "@material-ui/core/styles";
 import { ConnectedRouter } from "connected-react-router";
 import Blog from './newComponents/Blog';
+import About from './newComponents/About';
 
 const useStyles = makeStyles((theme) => ({
   fade: {
@@ -46,6 +47,9 @@ function App() {
           </Route>
           <Route exact path="/postArticle">
             <MainLayout ContentComponent={<PostArticle />} />
+          </Route>
+          <Route exact path="/about">
+            <MainLayout ContentComponent={<About />} />
           </Route>
           <Route exact path="/login">
             <MainLayout ContentComponent={<Login />} />
