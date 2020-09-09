@@ -90,7 +90,7 @@ function About(props) {
           <Grid container item xs={3} justify="flex-end" alignItems='flex-start'>
             <CardMedia className={classes.image}>
               <Image
-                src="static/images/anri.jpg"
+                src="/static/images/anri.jpg"
                 alt="Creator picture"
                 // width="100%"
                 width="150px"
