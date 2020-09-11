@@ -24,6 +24,7 @@ class PostList(generics.ListCreateAPIView):
         post.title = serializer.validated_data.get('title')
         post.body = serializer.validated_data.get('body')
         post.category = serializer.validated_data.get('category')
+        post.blurb = serializer.validated_data.get('blurb')
         post.author = Profile.objects.get(pk=self.request.user.pk)
         post.save()
         serializer = PostOutSerializer(post)

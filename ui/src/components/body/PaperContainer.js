@@ -57,7 +57,7 @@ export default function PaperContainer(props) {
       height: "100%",
     },
     content: {
-      width: "70%",
+      width: "100%",
       height: "100%",
     },
     image: {

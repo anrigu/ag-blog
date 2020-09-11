@@ -69,7 +69,7 @@ function Page(props) {
               justify="center"
               className={classes.parent}
             >
-              {console.log(post)}
+              {console.log('post',post)}
               <Grid container item>
                 <PaperContainer
                   title={post.title}

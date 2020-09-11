@@ -174,8 +174,13 @@ function PostArticle(props) {
                     option: classes.option,
                   }}
                   onChange={(event, newCat) => {
-                    console.log("new", newCat);
-                    setCategory(newCat.categoryName);
+                    if (newCat) {
+                      setCategory(newCat.categoryName);
+                      console.log("new", newCat.categoryName);
+                    }
+                    else {
+                      setCategory(null);
+                    }
                   }}
                   getOptionLabel={(option) => option.title}
                   renderOption={(option) => (

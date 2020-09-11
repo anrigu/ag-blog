@@ -22,10 +22,10 @@ export default function TextBody({
       </Grid>
       <Grid item container>
         <Grid container item>
-          <Typography variant="h2">{title}</Typography>
+          <Typography variant="h2" align='left'>{title}</Typography>
         </Grid>
         <Grid container item>
-          <Typography variant="h6" align='left'>
+          <Typography variant="h6" style={{fontSize:16}} align='left'>
             <DisplayHTML content={description}></DisplayHTML>
           </Typography>
         </Grid>
