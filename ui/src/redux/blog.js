@@ -146,7 +146,7 @@ export const postArticleEpic = (action$, state$) =>
           api.post(`/api/v1/posts/`, { title, body, category, blurb })
         ).pipe(
           mergeMap((res) => {
-            if (res.status === 200) {
+            if (res.status === 200 || res.status === 201) {
               return merge(
                 of(
                   blog.actions.setResponseStatus({

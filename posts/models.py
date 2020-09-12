@@ -14,7 +14,7 @@ class Profile(AbstractUser):
 
 class Post(models.Model):
     author = models.ForeignKey(Profile, on_delete=models.CASCADE)
-    title = models.CharField(max_length=50)
+    title = models.CharField(max_length=512)
     body = models.TextField()
     blurb = models.TextField(blank=True)
     category = models.CharField(
