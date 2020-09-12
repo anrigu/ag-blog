@@ -154,6 +154,7 @@ function PostArticle(props) {
                 variant="outlined"
                 label="Title"
                 onChange={(e) => setTitle(e.target.value)}
+                inputProps={{ maxLength: 145 }}
               ></CssTextField>
             </Container>
           </div>
@@ -217,6 +218,7 @@ function PostArticle(props) {
                     onChange={(e) => setBlurb(e.target.value)}
                     placeholder="Tell us about your post in a few short sentences!"
                     className={classes.textField}
+                    inputProps={{ maxLength: 250 }}
                     value={blurb}
                   ></CssSendTextField>
                   <CssIconButton
