@@ -62,7 +62,11 @@ const blog = createSlice({
         url: "/postPage/prospective",
         categoryName: "Prospective",
       },
-      { title: "Middle School", url: "/postPage/ms", categoryName: "MiddleSchool" },
+      {
+        title: "Middle School",
+        url: "/postPage/ms",
+        categoryName: "MiddleSchool",
+      },
       { title: "High School", url: "/postPage/hs", categoryName: "HighSchool" },
       { title: "Opinion", url: "/postPage/opinion", categoryName: "Opinion" },
       { title: "Post An Article", url: "/postArticle" },
@@ -78,28 +82,53 @@ export const getPostsEpic = (action$, state$) =>
     ofType(blog.actions.getPosts),
     withLatestFrom(state$),
     mergeMap(([action, state]) => {
-      return from(
-        api.get(`/api/v1/posts/?category=${state.blog.category}`)
-      ).pipe(
-        mergeMap((res) => {
-          if (res.status === 200) {
-            return merge(
-              of(
-                blog.actions.setBlogPosts({
-                  data: res.data,
-                })
-              ),
-              of(asyncStatus.actions.done())
-            );
-          } else {
-            return merge(
-              of(blog.actions.setResponseStatus({ responseStatus: "Bad" })),
-              of(asyncStatus.actions.done())
-            );
-          }
-        }),
-        catchError(() => merge(of(asyncStatus.actions.done())))
-      );
+      if (state.blog.category === "All") {
+        return from(
+          api.get(`/api/v1/posts/`)
+        ).pipe(
+          mergeMap((res) => {
+            if (res.status === 200) {
+              return merge(
+                of(
+                  blog.actions.setBlogPosts({
+                    data: res.data,
+                  })
+                ),
+                of(asyncStatus.actions.done())
+              );
+            } else {
+              return merge(
+                of(blog.actions.setResponseStatus({ responseStatus: "Bad" })),
+                of(asyncStatus.actions.done())
+              );
+            }
+          }),
+          catchError(() => merge(of(asyncStatus.actions.done())))
+        );
+      } else {
+        return from(
+          api.get(`/api/v1/posts/?category=${state.blog.category}`)
+        ).pipe(
+          mergeMap((res) => {
+            if (res.status === 200) {
+              return merge(
+                of(
+                  blog.actions.setBlogPosts({
+                    data: res.data,
+                  })
+                ),
+                of(asyncStatus.actions.done())
+              );
+            } else {
+              return merge(
+                of(blog.actions.setResponseStatus({ responseStatus: "Bad" })),
+                of(asyncStatus.actions.done())
+              );
+            }
+          }),
+          catchError(() => merge(of(asyncStatus.actions.done())))
+        );
+      }
     })
   );
 
