@@ -78,7 +78,7 @@ function About(props) {
       <Header title="Blog" sections={props.sections} />
       <Container maxWidth="md" style={{ marginTop: "15px" }}>
         <Card elevation={0} className={classes.root}>
-          <Grid container item xs={9}>
+          <Grid container item>
             <CardContent>
               <Typography variant="h4">Anri Gu</Typography>
               <Typography variant="subtitle1" color="textSecondary">
@@ -87,18 +87,17 @@ function About(props) {
               {text}
             </CardContent>
           </Grid>
-          <Grid container item xs={3} justify="flex-end" alignItems='flex-start'>
-            <CardMedia className={classes.image}>
-              <Image
-                src="/static/images/anri.jpg"
-                alt="Creator picture"
-                // width="100%"
-                width="150px"
-                height="200px"
-                // height="100%"
-              />
-            </CardMedia>
-          </Grid>
+
+          <CardMedia className={classes.image}>
+            <Image
+              src="/static/images/anri.jpg"
+              alt="Creator picture"
+              // width="100%"
+              width="150px"
+              height="200px"
+              // height="100%"
+            />
+          </CardMedia>
         </Card>
       </Container>
     </Container>

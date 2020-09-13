@@ -6,6 +6,7 @@ export default function Image({ src, height, width }) {
   const useStyles = makeStyles((theme) => ({
     img: {
       objectFit: "cover",
+      float: 'right',
       height: height,
       width: width,
     },
