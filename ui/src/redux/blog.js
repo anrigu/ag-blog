@@ -58,11 +58,6 @@ const blog = createSlice({
       { title: "Home", url: "/home" },
       { title: "All", url: "/postPage/all", categoryName: "All" },
       {
-        title: "Prospective Students/Families",
-        url: "/postPage/prospective",
-        categoryName: "Prospective",
-      },
-      {
         title: "Middle School",
         url: "/postPage/ms",
         categoryName: "MiddleSchool",

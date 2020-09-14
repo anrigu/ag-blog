@@ -22,7 +22,7 @@ This blog is a resource where you can not only read all about our experiences, t
 but a space where you can share your personal stories so that younger generations can learn from your stories! 
 
 Please, share all your amazing experiences! Do you have strong opinions on a topic? Share them in the [opinions](/postPage/opinions/) tab! Any amazing experiences 
-at Tomken you'd like to talk about? Let [others know](/postPage/ms)! Talk about the good, the bad, the happy, the sad, the fun, the boring experience(s) you've had! This is a 
+at Tomken you'd like to talk about? Let others know! Talk about the good, the bad, the happy, the sad, the fun, the boring experience(s) you've had! This is a 
 platform where you can let loose! Have fun sharing! `;
 
 // export const post3 = `# New feature

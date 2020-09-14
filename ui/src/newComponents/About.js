@@ -78,7 +78,7 @@ function About(props) {
       <Header title="Blog" sections={props.sections} />
       <Container maxWidth="md" style={{ marginTop: "15px" }}>
         <Card elevation={0} className={classes.root}>
-          <Grid container item>
+          <Grid container item style={{ display: "inline-block" }}>
             <CardContent>
               <Typography variant="h4">Anri Gu</Typography>
               <Typography variant="subtitle1" color="textSecondary">
@@ -87,7 +87,6 @@ function About(props) {
               {text}
             </CardContent>
           </Grid>
-
           <CardMedia className={classes.image}>
             <Image
               src="/static/images/anri.jpg"
