@@ -7,7 +7,7 @@ export default axios.create({
   xsrfCookieName: "csrftoken",
   xsrfHeaderName: "x-csrftoken",
   validateStatus: () => true,
-  headers: {
-    Accept: "application/json",
-  },
+  // headers: {
+  //   Accept: "application/json",
+  // },
 });

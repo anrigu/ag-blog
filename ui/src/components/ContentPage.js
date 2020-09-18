@@ -67,7 +67,7 @@ function ContentPage(props) {
               <div className={classes.author}>
                 <Typography variant="subtitle1">{`Written by: ${props.currentPost.author.first_name} ${props.currentPost.author.last_name}`}</Typography>
                 <Typography variant="overline">
-                  {convertDate(props.created_at)}
+                  Updated at: {convertDate(props.created_at)}
                 </Typography>
               </div>
               <Grid container item direction="column">
