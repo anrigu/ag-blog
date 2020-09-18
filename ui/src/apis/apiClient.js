@@ -1,10 +1,13 @@
-import axios from 'axios';
+import axios from "axios";
 
 export default axios.create({
-  baseURL: '',
+  baseURL: "",
   // baseURL: `${process.env.REACT_APP_REST_API_URL}`,
   withCredentials: true,
-  xsrfCookieName: 'csrftoken',
-  xsrfHeaderName: 'x-csrftoken',
-  validateStatus: () => true
+  xsrfCookieName: "csrftoken",
+  xsrfHeaderName: "x-csrftoken",
+  validateStatus: () => true,
+  headers: {
+    Accept: "application/json",
+  },
 });

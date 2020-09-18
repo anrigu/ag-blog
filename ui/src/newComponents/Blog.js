@@ -24,30 +24,33 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const mainFeaturedPost = {
-  title: "Title of a longer featured blog post",
+  title: "I Started DI At My High School",
   description:
-    "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
+    "In grade 10, I started a Destination Imagination Chapter at John Fraser. Was it easy? Stressful? Fun? Read on to learn all about the difficulties and rewards of founding a club in high school!",
   image: "https://source.unsplash.com/featured/?sig=123&architecture,nature",
-  imgText: "main image description",
+  imgText: "Main image",
   linkText: "Continue reading…",
+  link: "/postPage/article/10/", //set to random value for local. 10 for production
 };
 
 const featuredPosts = [
   {
-    title: "Featured post",
-    date: "Nov 12",
+    title: "I Started DI At My High School Pt. 2",
+    date: "August 12, 2020",
     description:
-      "This is a wider card with supporting text below as a natural lead-in to additional content.",
+      "Although I was on a team with peers I barely knew, the DI Globals experience was not I expected! Read on to learn more!",
     image: "https://source.unsplash.com/featured/?sig=245&architecture,nature",
     imageText: "Image Text",
+    link: "/postPage/article/2/", //set to random value for local. 2 for production
   },
   {
-    title: "Post title",
-    date: "Nov 11",
+    title: "How I Won In Defeat",
+    date: "August 20, 2020",
     description:
-      "This is a wider card with supporting text below as a natural lead-in to additional content.",
+      "The 2016 TBHL competition at Tomken was a rollercoaster ride, filled with ups, downs, twists and turns! Did I win? Lose? Read on to learn more!",
     image: "https://source.unsplash.com/featured/?sig=365&architecture,nature",
     imageText: "Image Text",
+    link: "/postPage/article/14/", //set to random value for local. 14 for production
   },
 ];
 
@@ -60,8 +63,16 @@ const sidebar = {
 
   social: [
     { name: "GitHub", icon: GitHubIcon },
-    { name: "Twitter - Scitech", icon: TwitterIcon, url: "https://twitter.com/tomkenscitech" },
-    { name: "Twitter - Tomken Road M.S", icon: TwitterIcon, url: "https://twitter.com/tomkenroadms" },
+    {
+      name: "Twitter - Scitech",
+      icon: TwitterIcon,
+      url: "https://twitter.com/tomkenscitech",
+    },
+    {
+      name: "Twitter - Tomken Road M.S",
+      icon: TwitterIcon,
+      url: "https://twitter.com/tomkenroadms",
+    },
   ],
 };
 
@@ -90,7 +101,10 @@ function Blog(props) {
           </Grid>
         </main>
       </Container>
-      <Footer title="Created by Anri Gu" description="Built in React and adapted from Material UI (2020)" />
+      <Footer
+        title="Created by Anri Gu"
+        description="Built in React and adapted from Material UI (2020)"
+      />
     </React.Fragment>
   );
 }
