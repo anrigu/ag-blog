@@ -30,6 +30,7 @@ const TRANSITION_LENGTH = 0.25;
 const useStyles = makeStyles((theme) => ({
   root: {
     border: "2px solid #F5F5F5",
+    marginTop:"5px",  
     width: "100%",
     background: theme.palette.background.main,
     transition: `background ${TRANSITION_LENGTH}s ease-in-out, transform ${TRANSITION_LENGTH}s ease-in-out`,
@@ -78,7 +79,7 @@ function About(props) {
       Hey! I'm Sofia Puscareov, a SciTech graduate and current IB student. My
       passions are broad; from social reform to entertainment and anything in
       between. I hope my writing is beneficial to you and always feel free to
-      reach out
+      reach out!
     </p>
   );
   return (
