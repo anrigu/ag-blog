@@ -27,7 +27,7 @@ const mainFeaturedPost = {
   title: "I Started DI At My High School",
   description:
     "In grade 10, I started a Destination Imagination Chapter at John Fraser. Was it easy? Stressful? Fun? Read on to learn all about the difficulties and rewards of founding a club in high school!",
-  image: "https://source.unsplash.com/featured/?sig=123&architecture",
+  image: "https://source.unsplash.com/1600x900/?sig=2&nature,water",
   imgText: "Main image",
   linkText: "Continue reading…",
   link: "/postPage/article/10/", //set to random value for local. 10 for production
@@ -39,7 +39,7 @@ const featuredPosts = [
     date: "August 12, 2020",
     description:
       "Although I was on a team with peers I barely knew, the DI Globals experience was not I expected! Read on to learn more!",
-    image: "https://source.unsplash.com/featured/?sig=245&architecture",
+    image: "https://source.unsplash.com/1600x900/?sig=1&nature,water",
     imageText: "Image Text",
     link: "/postPage/article/2/", //set to random value for local. 2 for production
   },
@@ -48,7 +48,7 @@ const featuredPosts = [
     date: "August 20, 2020",
     description:
       "The 2016 TBHL competition at Tomken was a rollercoaster ride, filled with ups, downs, twists and turns! Did I win? Lose? Read on to learn more!",
-    image: "https://source.unsplash.com/featured/?sig=365&architecture",
+    image: "https://source.unsplash.com/1600x900/?sig=3&nature,water",
     imageText: "Image Text",
     link: "/postPage/article/14/", //set to random value for local. 14 for production
   },
