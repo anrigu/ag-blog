@@ -15,9 +15,9 @@ export default function TextBody({
           <Typography variant="subtitle1">Written by: {author}</Typography>
         </Grid>
         <Grid container item>
-          <Typography variant="overline">
+          {/* <Typography variant="overline">
             Created at: {infoHelperText}
-          </Typography>
+          </Typography> */}
         </Grid>
       </Grid>
       <Grid item container>

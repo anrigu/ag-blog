@@ -1,6 +1,6 @@
 export const post1 = `# Why Did I Create This Blog?
 
-#### August 19, 2020 by [Anri Gu](/about)
+#### June 19, 2020 by [Anri Gu](/about)
 
 Hi! My name is Anri! I’m a former student of Tomken (Go Tigers!) and the SciTech Program currently entering my last year at John Fraser Secondary School. Some of you may be 
 wondering why I created this blog! I've always been interested in giving back to the community, a hobby that started at Tomken (fun fact: My fascination with giving back started
@@ -12,7 +12,7 @@ motivate a younger student - 10, 20, 30 years in the future - to pursue their dr
 
 export const post2 = `# To Current Students…
 
-#### August 19, 2020 by [Anri Gu](/about)
+#### June 19, 2020 by [Anri Gu](/about)
 
 When I was in middle school – in your very place – I always wished there was a voice telling me what to do: what opportunities to take, 
 what moments should be cherished, what assignments are important. Today, as I enter the 12th grade and look back at my Grade 6,7 and 8 experience, 
