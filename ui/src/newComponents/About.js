@@ -74,14 +74,6 @@ function About(props) {
       <b>741182@pdsb.net</b>. Happy reading!
     </p>
   );
-  const textSecondary = (
-    <p>
-      Hey! I'm Sofia Puscareov, a SciTech graduate and current IB student. My
-      passions are broad; from social reform to entertainment and anything in
-      between. I hope my writing is beneficial to you and always feel free to
-      reach out!
-    </p>
-  );
   return (
     <Container maxWidth="lg">
       <Header title="Blog" sections={props.sections} />
@@ -105,27 +97,6 @@ function About(props) {
               height="200px"
               // height="100%"
             />
-          </CardMedia>
-        </Card>
-        <Card elevation={0} className={classes.root}>
-          <Grid container item style={{ display: "inline-block" }}>
-            <CardContent>
-              <Typography variant="h4">Sofia Puscareov</Typography>
-              <Typography variant="subtitle1" color="textSecondary">
-                Writer
-              </Typography>
-              {textSecondary}
-            </CardContent>
-          </Grid>
-          <CardMedia className={classes.image}>
-            {/* <Image
-              src="/static/images/anri.jpg"
-              alt="Creator picture"
-              // width="100%"
-              width="150px"
-              height="200px"
-              // height="100%"
-            /> */}
           </CardMedia>
         </Card>
       </Container>
