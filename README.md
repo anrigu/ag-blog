@@ -1,6 +1,6 @@
-# ag-blog
+# Anri's Blog
 
-This is a blog I designed to aid rising high school freshmen learn more about the high school experience and the opportunities that are open to them at 
+This is a [blog](https://blog-ag.herokuapp.com/) I designed to aid rising high school freshmen learn more about the high school experience and the opportunities that are open to them at 
 this stage of their education. I talk about the struggles of starting my own club, the struggle in finding the right work-life balance. This blog also 
 functioned as a forum in which other, high school students could post their own experiences! In late 2019, the app was integrated and used by a number of classes at middle school as a guidance tool for graduating students. It continues to be used today.  
 
