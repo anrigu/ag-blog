@@ -1,5 +1,4 @@
 # Anri's Blog
-Blog for rising freshmen to aid them in transitioning into high school. Designed and developed in React and Django.
 
 This is a [blog](https://blog-ag.herokuapp.com/) I designed to aid rising high school freshmen learn more about the high school experience and the opportunities that are open to them at 
 this stage of their education. I talk about the struggles of starting my own club, the struggle in finding the right work-life balance. This blog also 
