@@ -7,4 +7,4 @@ functioned as a forum in which other, high school students could post their own 
 # Tools
 
 I developed the frontend of this blog in React using the Material-UI library. I also used React-Redux, Axios, and React Thunk for various logisitical aspects of the app.
-The backend is designed around the Django Rest Framework (DRF).
+The backend is designed around the Django Rest Framework (DRF) and uses Django. It is deployed on Heroku.
